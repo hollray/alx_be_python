@@ -8,4 +8,6 @@ future_year = int(input("Enter the year you want to know your age in: "))
 # This calculates the future age by subtracting the current year from the future year and adding the current age
 future_age = future_year - current_year + age
 # This prints the future age of the user
+# this line converts future age to string
+future_year = str(future_year) + str(",")
 print("in", future_year, "you will be", future_age, "years old")
