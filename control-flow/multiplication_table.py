@@ -3,7 +3,7 @@
 
 number = int(input("Enter a number to see its multiplication table: "))
 
-for current_number in range(1, 11):
-    y = current_number
-    z = number * y
-    print(f"{number} * {y} = {z}")
+for y in range(1, 11):
+    x = number
+    z = x * y
+    print(f"{x} * {y} = {z}")
