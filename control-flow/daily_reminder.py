@@ -1,9 +1,9 @@
 # This program is a simple daily reminder to users to take a break and stretch.
 # It uses conditional statements,
 
-task = input("Enter your task:\n")
-priority = input("Priority (high/medium/low):\n")
-time_bound = input("Is it time-bound? (yes/no):\n")
+task = input("Enter your task:")
+priority = input("Priority (high/medium/low):")
+time_bound = input("Is it time-bound? (yes/no):")
 message = " "
 
 match priority:
