@@ -1,6 +1,6 @@
 # This module would be imported in another main module
 
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     """
     Perform arithmetic operations based on the provided operation type.
 
