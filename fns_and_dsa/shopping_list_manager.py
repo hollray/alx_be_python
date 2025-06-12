@@ -1,27 +1,55 @@
-# This module manages shopping lists by allowing users to add, remove, and view items.
-shopping_list = []
-shopping = (input("What do you want to do? pick th following options (1 to Add Item, 2 to Remove Item, 3 to View the list and 4 to Exit)"))
+def display_menu():
+    print("Shopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
 
-while shopping != 4:
-    match shopping:
-        case "1":
-            item = (input("What Item do you want to add to the list? "))
+
+def main():
+    shopping_list = []
+    while True:
+        display_menu()
+        choice = input("Enter your choice: ")
+        print
+
+        if choice == '1':
+            # Prompt for and add an item
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
-        case "2":
-            item = (input("What Item do you want to remove from the list? "))
-            shopping_list.remove(item)
-        case "3":
-            print("Shopping List: ")
-            for item in shopping_list:
-                print(f"- {item}")
-        case "4":
-            print("You have chossen to exit the program")
-            shopping = int(4)
+            print(f"Added {item} to the list.")
+
+            pass
+        elif choice == '2':
+            # Prompt for and remove an item
+            item = input("Enter the item to remove: ")
+            if item in shopping_list:
+                shopping_list.remove(item)
+                print(f"Removed {item} from the list.")
+                print()
+
+            else:
+                print(f"{item} not found in the list.")
+            pass
+            print()
+        elif choice == '3':
+            # Display the shopping list
+            if shopping_list:
+                print()
+                print("Shopping List: ")
+                for item in shopping_list:
+                    print(f"- {item}")
+            else:
+                print("Your shopping list is empty.")
+                print()
+            pass
+        elif choice == '4':
+            print("Goodbye!")
+            print()
             break
-            # exit
+        else:
+            print("Invalid choice. Please try again.")
 
-        case _:
-            print("Invalid option. Please try again.")
 
-    shopping = (input(
-        "What do you want to do? pick th following options (1 to Add Item, 2 to Remove Item, 3 to View the list and 4 to Exit)"))
+if __name__ == "__main__":
+    main()
