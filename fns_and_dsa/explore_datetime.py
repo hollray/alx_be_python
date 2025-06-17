@@ -1,5 +1,5 @@
 # This modle uses datetime library to explore datetime objects and their properties.
-import datetime
+from datetime import datetime
 
 
 def display_current_datetime():
