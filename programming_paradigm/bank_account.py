@@ -26,8 +26,8 @@ class BankAccount:
 
     def display_balance(self):
         """Prints the current account balance."""
-        current_balance = self.account_balance
-        if current_balance < 0:
+        amount = self.account_balance
+        if amount < 0:
             print("Warning: Your account is overdrawn!")
-        print(f"Current balance: ${current_balance}")
-        return current_balance
+        print(f"Current balance: ${self.account_balance}")
+        return self.account_balance
