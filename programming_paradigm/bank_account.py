@@ -29,5 +29,5 @@ class BankAccount:
         amount = self.account_balance
         if amount < 0:
             print("Warning: Your account is overdrawn!")
-        print(f"Current balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance}")
         return self.account_balance
