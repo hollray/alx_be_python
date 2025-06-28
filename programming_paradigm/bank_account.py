@@ -30,3 +30,4 @@ class BankAccount:
         if current_balance < 0:
             print("Warning: Your account is overdrawn!")
         print(f"Current balance: ${current_balance}")
+        return current_balance
