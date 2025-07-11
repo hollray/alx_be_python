@@ -1,7 +1,7 @@
 # Python script to calculate temperature conversions between Celsius and Fahrenheit using global variables.
 
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 
 def convert_to_celsius(fahrenheit):
@@ -21,9 +21,13 @@ conversion_type = input(
     "The entered Value is it in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
 if conversion_type == "C":
+   # converted_value = convert_to_fahrenheit(temperature_value)
+   # print(f"{temperature_value}°C is equal to {converted_value}°F")
     converted_value = convert_to_fahrenheit(temperature_value)
     print(f"{temperature_value}°C is equal to {converted_value}°F")
 elif conversion_type == "F":
+    # converted_value = convert_to_celsius(temperature_value)
+    # print(f"{temperature_value}°F is equal to {converted_value}°C")
     converted_value = convert_to_celsius(temperature_value)
     print(f"{temperature_value}°F is equal to {converted_value}°C")
 else:
