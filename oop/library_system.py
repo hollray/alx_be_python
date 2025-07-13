@@ -68,7 +68,6 @@ class Library:
             print("The library is currently empty.")
             return
 
-        print("--- Library Inventory ---")
         for book in self.books:
             # Polymorphism in action: calling __str__ on the specific book type
             print(book)
